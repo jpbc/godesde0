@@ -1,7 +1,13 @@
 package main
 
-import "github.com/jpbc/godesde0/variables"
+import (
+	"fmt"
+
+	"github.com/jpbc/godesde0/variables"
+)
 
 func main() {
-	variables.MuestroEnteros()
+	estado, texto := variables.ConviertoaTexto(1234)
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
