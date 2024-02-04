@@ -3,11 +3,7 @@ package ejercicios
 import "strconv"
 
 func DevuelveIntString(cadena string) (int, string) {
-	entero, err := strconv.Atoi(cadena)
-	if err != nil {
-		// ... handle error
-		panic(err)
-	}
+	entero, _ := strconv.Atoi(cadena)
 
 	var mensaje string
 	if entero > 100 {
