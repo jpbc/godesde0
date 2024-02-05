@@ -29,10 +29,10 @@ func TabladeMultiplicar(numero int) {
 	fmt.Println("Tabla de Multiplicar del ", numero)
 	fmt.Println("==================================")
 	for i := 1; i <= 10; i++ {
-		if i == 10 {
-			fmt.Println(i, "x ", numero, " = ", i*numero)
+		if numero == 10 {
+			fmt.Println(numero, "x ", i, "= ", i*numero)
 		} else {
-			fmt.Println(i, " x ", numero, " = ", i*numero)
+			fmt.Println(numero, " x ", i, " = ", i*numero)
 		}
 	}
 }
